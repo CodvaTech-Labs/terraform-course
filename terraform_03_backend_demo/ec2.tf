@@ -2,7 +2,7 @@ resource "aws_instance" "ec2_demo" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name               = var.key_name
-  subnet_id              = "subnet-6f19ee04"
+  subnet_id              = "subnet-047e21219fc4428aa"
   vpc_security_group_ids = [aws_security_group.ec2_demo_sg.id]
 
   tags = {

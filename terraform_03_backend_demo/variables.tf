@@ -1,6 +1,6 @@
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
+  default = "t2.small"
 }
 
 variable "ami_id" {
@@ -11,5 +11,5 @@ variable "ami_id" {
 
 variable "key_name" {
   type    = string
-  default = "devops2022"
+  default = "devops-demo"
 }

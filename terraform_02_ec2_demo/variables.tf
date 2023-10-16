@@ -1,6 +1,6 @@
 variable "instance_type" {
   type    = string
-  default = "t2.small"
+  default = "t2.micro"
 }
 
 variable "ami_id" {
@@ -9,7 +9,12 @@ variable "ami_id" {
 
 }
 
+variable "subnet_id" {
+  type = string
+  default = "subnet-047e21219fc4428aa"
+}
+
 variable "key_name" {
   type    = string
-  default = "devops2022"
+  default = "devops-demo"
 }
