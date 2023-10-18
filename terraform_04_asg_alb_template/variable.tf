@@ -20,7 +20,7 @@ variable "instance_type" {
 
 variable "key_name" {
   type    = string
-  default = "devops2022"
+  default = "devops-demo"
 }
 
 variable "lb_name" {
