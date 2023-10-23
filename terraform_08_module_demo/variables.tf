@@ -1,6 +1,6 @@
 variable "ami_id" {
   type    = string
-  default = "ami-052cef05d01020f1d"
+  default = "ami-04893cdb768d0f9ee"
 }
 
 variable "lb_security_group_name" {
@@ -15,12 +15,12 @@ variable "asg_security_group_name" {
 
 variable "instance_type" {
   type    = string
-  default = "t2.small"
+  default = "t2.micro"
 }
 
 variable "key_name" {
   type    = string
-  default = "devops2022"
+  default = "devops-demo"
 }
 
 variable "lb_name" {
