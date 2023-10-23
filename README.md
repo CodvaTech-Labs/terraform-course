@@ -1,8 +1,6 @@
 # terraform-course
 All Terraform Codes (Infra As Code)
 
-Certainly! Here's a `README.md` file for installing the AWS Command Line Interface (AWS CLI) on Windows, Linux, and macOS:
-
 ```markdown
 # AWS CLI Installation Guide
 
