@@ -20,7 +20,7 @@ Edit the `backend.tf` file to match your specific settings. Here's what each par
 
 - `dynamodb_table`: (Optional) If you want to enable state locking, provide the name of a DynamoDB table to be used for locking. Replace `"tf-lock-state"` with your desired table name.
 
-- `variables.tf`: Update variables.tf file Replace `"ctl-static-website-devops"`  and `"logs-ctl-static-website-devops"` with actual bucket name which for static website and log file bucket
+- `variables.tf`: Update variables.tf file Replace `"ctl-static-website-devops"`  and `"logs-ctl-static-website-devops"` with actual bucket name which used for static website and log file bucket. (Note - We required two buckets , one for actual code and another for logs. Also don't create bucket manually as terraform code will create bucket) 
 
 - `website-bucket.tf`: Update bucket name and S3 Resource ARN
 
