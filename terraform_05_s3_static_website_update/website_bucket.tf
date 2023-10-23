@@ -1,7 +1,7 @@
 # Setup Static Website Bucket 
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "ctl-static-website-demo-may-tf"
+  bucket = "ctl-static-website-devops"
   tags = {
     Name       = "S3-Static-Website"
     Created_By = "Terraform"
@@ -21,7 +21,7 @@ resource "aws_s3_bucket_policy" "allow_access_from_another_account" {
                 "Effect": "Allow",
                 "Principal": "*",
                 "Action": "s3:GetObject",
-                "Resource": "arn:aws:s3:::ctl-static-website-demo-may-tf/*"
+                "Resource": "arn:aws:s3:::ctl-static-website-devops/*"
         }
     ]
       }
@@ -29,7 +29,7 @@ resource "aws_s3_bucket_policy" "allow_access_from_another_account" {
 }
 
 resource "aws_s3_bucket_website_configuration" "website-config" {
-  bucket = "ctl-static-website-demo-may-tf"
+  bucket = "ctl-static-website-devops"
   index_document {
     suffix = "index.html"
   }

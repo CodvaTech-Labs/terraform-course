@@ -1,9 +1,9 @@
 variable "static_bucket_name"{
     type = string
-    default = "ctl-static-website-demo-may-tf"
+    default = "ctl-static-website-devops"
 }
 
 variable "logging_bucket_name"{
     type = string
-    default = "logs-ctl-static-website-demo-may-tf"
+    default = "logs-ctl-static-website-devops"
 }

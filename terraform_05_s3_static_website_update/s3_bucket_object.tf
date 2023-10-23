@@ -2,7 +2,7 @@
 
 resource "aws_s3_bucket_object" "oject" {
   for_each     = fileset("temp/", "*")
-  bucket       = "ctl-static-website-demo-may-tf"
+  bucket       = "ctl-static-website-devops"
   key          = each.value
   content_type = "text/html"
   source       = "temp/${each.value}"
