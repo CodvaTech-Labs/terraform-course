@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "ctl-terraform-state-ap-south-1"
-    key            = "tfdemo/workspace"
+    bucket         = "ctl-tf-state-lock-demo"
+    key            = "workspace"
     region         = "ap-south-1"
-    dynamodb_table = "terraform-state"
+    dynamodb_table = "tf-lock-state"
   }
 }

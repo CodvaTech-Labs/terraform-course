@@ -30,12 +30,12 @@ variable "volume_type" {
 
 variable "ec2_key_name" {
   type    = string
-  default = "devops2022"
+  default = "devops-demo"
 }
 
 variable "subnet_name" {
   type    = string
-  default = "subnet-6f19ee04"
+  default = "subnet-047e21219fc4428aa"
 }
 
 variable "tag_values" {
