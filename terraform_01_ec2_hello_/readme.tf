@@ -1,4 +1,4 @@
-# Terraform - Setup EC2 using Terraform 
+# terraform-course
 Setup Terraform EC2 instance using Terraform 
 
 ## Prerequisites
@@ -24,7 +24,7 @@ Before getting started, make sure you have the following prerequisites installed
    terraform plan
    ```
 
-3. Deploy the infrastructure for the `dev` environment:
+3. Deploy the infrastructure using below commands:
 
    ```shell
    terraform apply
