@@ -22,6 +22,12 @@ Edit the `backend.tf` file to match your specific settings. Here's what each par
 
 - `variables.tf`: Update variables.tf file Replace `"ctl-static-website-devops"`  and `"logs-ctl-static-website-devops"` with actual bucket name which for static website and log file bucket
 
+- `website-bucket.tf`: Update website-bucket.tf with your bucket name and another bucket used for logging purpose. Also update S3  ARN
+
+ ```shell
+   bucket = "ctl-static-website-devops"
+   Resource": "arn:aws:s3:::ctl-static-website-devops/*
+
 
 ## Usage
 
