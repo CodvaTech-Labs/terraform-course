@@ -11,3 +11,4 @@ module "asg-alb-demo" {
   max_size                = var.max_size
   desired_capacity        = var.desired_capacity
 }
+

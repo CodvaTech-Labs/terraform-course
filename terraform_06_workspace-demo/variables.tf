@@ -5,6 +5,7 @@ variable "security_group_name" {
     "dev"     = "dev-workspsace-sg"
     "qa"      = "qa-workspace-qa"
     "staging" = "staging-workspace-qa"
+    "prod"    = "prod-workspace-sg"
   }
 }
 
@@ -13,8 +14,9 @@ variable "instance_type" {
   default = {
     "default" = "t2.nano"
     "dev"     = "t2.micro"
-    "qa"      = "t2.medium"
+    "qa"      = "t2.small"
     "staging" = "t2.large"
+    "prod"    = "t2.2xlarge"
   }
 }
 

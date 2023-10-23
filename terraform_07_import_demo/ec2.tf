@@ -1,6 +1,6 @@
 resource "aws_instance" "import_demo" {
-  ami           = "ami-04893cdb768d0f9ee"
-  instance_type = "t2.micro"
+  ami           = "ami-099b3d23e336c2e83"
+  instance_type = "t2.small"
 }
 
 

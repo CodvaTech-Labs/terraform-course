@@ -11,6 +11,8 @@ resource "aws_instance" "ec2_terraform" {
   }
 
   key_name               = var.ec2_key_name
+
+
   subnet_id              = var.subnet_name
   vpc_security_group_ids = [aws_security_group.allow_http.id]
 
