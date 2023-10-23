@@ -22,11 +22,31 @@ Edit the `backend.tf` file to match your specific settings. Here's what each par
 
 - `variables.tf`: Update variables.tf file Replace `"ctl-static-website-devops"`  and `"logs-ctl-static-website-devops"` with actual bucket name which for static website and log file bucket
 
-- `website-bucket.tf`: Update website-bucket.tf with your bucket name and another bucket used for logging purpose. Also update S3  ARN
+- `website-bucket.tf`: Update bucket name and S3 Resource ARN
 
  ```shell
    bucket = "ctl-static-website-devops"
    Resource": "arn:aws:s3:::ctl-static-website-devops/*
+```
+
+- `s3_bucket_object.tf`: Update file as per your bucket name 
+
+ ```shell
+   bucket= "ctl-static-website-devops"
+```
+
+- `logging_bucket.tf`: Update file as per your logging bucket name 
+
+ ```shell
+   bucket= "bucket = "logs-ctl-static-website-devops""
+```
+
+
+- `policy.json`: Update S3 ARN in policy JSON file
+
+ ```shell
+   "Resource": "arn:aws:s3:::ctl-static-website-devops/*"
+```
 
 
 ## Usage
@@ -35,3 +55,18 @@ Edit the `backend.tf` file to match your specific settings. Here's what each par
 
    ```shell
    terraform init
+   ```
+
+2. Validate terraform configuration using terraaform plan :
+
+   ```shell
+   terraform plan
+   ```
+
+3. : Run terraform apply for S3 bucket provisioning. This will create new S3 bucket , S3 log file bucket , enable Static Website and upload code for Static Website
+
+   ```shell
+   terraform apply 
+   ```
+4. Browse application using S3 Static Website URL 
+   
