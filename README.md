@@ -187,8 +187,3 @@ This guide will walk you through the steps to install Terraform, a popular Infra
 ## Author
 CodvaTech Labs
 
-
-## Author
-
-[Your Name]
-CodvaTech Labs
