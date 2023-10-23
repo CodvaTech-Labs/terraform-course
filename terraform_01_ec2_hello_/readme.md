@@ -10,8 +10,6 @@ Before getting started, make sure you have the following prerequisites installed
 
 ## Run below commands 
 
-```
-
 1. Initialize the Terraform configuration:
 
    ```shell
